@@ -28,7 +28,7 @@
 					} catch (error) {
 						console.log('请求出错',error);
 					}
-				
+
 
 ## 三、路由的基本使用
 			1.明确好界面中的导航区、展示区
@@ -108,16 +108,16 @@
 							注册路由(无需声明，正常注册即可)：<Route path="/demo/test" component={Test}/>
 							接收参数：this.props.location.state
 							备注：刷新也可以保留住参数
-				
+
 
 
 ## 十二、编程式路由导航
 					借助this.prosp.history对象上的API对操作路由跳转、前进、后退
-							-this.prosp.history.push()
-							-this.prosp.history.replace()
-							-this.prosp.history.goBack()
-							-this.prosp.history.goForward()
-							-this.prosp.history.go()
+							-this.props.history.push()
+							-this.props.history.replace()
+							-this.props.history.goBack()
+							-this.props.history.goForward()
+							-this.props.history.go()
 
 ## 十三、BrowserRouter与HashRouter的区别
 			1.底层原理不一样：
